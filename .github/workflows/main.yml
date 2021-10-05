@@ -6,11 +6,7 @@ name: Getting Started
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches:
-      - main
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -32,15 +28,15 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo What is in this directory?
-          ls -l
+          ls -a
           echo
-          echo Is Java installed
+          echo Is Java installed?
           java -version
           echo
-          echo Is Git installed
+          echo Is Git installed?
           git --version
           echo
-          echo Is Git installed
+          echo Is Git installed?
           git --version
           echo
           echo What about build tools
